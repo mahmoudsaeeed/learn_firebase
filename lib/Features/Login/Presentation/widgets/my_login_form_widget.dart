@@ -38,11 +38,12 @@ class _MyLoginFormWidgetState extends State<MyLoginFormWidget> {
           MyTextFormFieldWidget(
             labelText: "password",
             myController: passwordController,
-            obscure: true,
+            isPasswordField: true,
           ),
           _loginButton(
             onPressed: () {
-              debugPrint("email is ${emailController!.text}\npassword is ${passwordController!.text}");
+              debugPrint(
+                  "email is ${emailController!.text}\npassword is ${passwordController!.text}");
             },
           ),
         ],

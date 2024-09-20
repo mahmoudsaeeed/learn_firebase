@@ -10,7 +10,7 @@ class Routes {
       case homeViewName:
         {
           return MaterialPageRoute(
-            builder: (context) => MyHomeView(),
+            builder: (context) => const MyHomeView(),
           );
         }
       case loginViewName:
